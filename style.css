@@ -5,7 +5,7 @@ body {
 .container {
   width: 95%;
 
-  background-color: #999;
+  background-color: #ccc;
   margin: 64px auto;
 
   border-radius: 16px;
@@ -27,8 +27,8 @@ h1 {
   margin-top: 32px;
   color: #000;
   text-align: center;
-  background-color: #999;
-  border-color: #999;
+  background-color: #ccc;
+  border-color: #ccc;
 }
 .rgb-result {
   width: 250px;
@@ -119,5 +119,9 @@ input[id='blueText'] {
   width: 100px;
   height: 40px;
   margin-left: 16px;
+  font-size: 20px;
   text-align: center;
+
+  border-radius: 8px;
+  background-color: #ccc;
 }
