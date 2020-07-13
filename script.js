@@ -1,6 +1,4 @@
 const sliders = document.querySelectorAll('.slider');
-const selectElementGreen = document.querySelector('#green');
-const selectElementBlue = document.querySelector('#blue');
 const result = document.querySelector('.rgb-result');
 
 let redNumber = '00';
@@ -21,7 +19,7 @@ var convertRGBToHex = function (rgbNumber) {
 };
 
 for (let slider of sliders) {
-  slider.addEventListener('change', function (event) {
+  slider.addEventListener('input', function (event) {
     if (slider.id == 'red') {
       redNumber = convertRGBToHex(slider.value);
       redRadius = parseInt(slider.value);
