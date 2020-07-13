@@ -1,0 +1,123 @@
+body {
+  background-color: #004;
+}
+
+.container {
+  width: 95%;
+
+  background-color: #999;
+  margin: 64px auto;
+
+  border-radius: 16px;
+}
+
+h1 {
+  padding: 32px;
+  text-align: center;
+}
+
+.rgb-inputs {
+  width: 90%;
+  margin: 16px auto;
+
+  border-radius: 16px;
+}
+
+.rgb-transform {
+  margin-top: 32px;
+  color: #000;
+  text-align: center;
+  background-color: #999;
+  border-color: #999;
+}
+.rgb-result {
+  width: 250px;
+  height: 250px;
+  margin: 16px auto;
+
+  background-color: #000;
+
+  margin-bottom: 32px;
+}
+
+.red,
+.green,
+.blue {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 48px 16px;
+}
+
+p {
+  font-size: 18px;
+  font-weight: bold;
+}
+.red p {
+  color: #f00;
+}
+
+.green p {
+  color: #0f0;
+}
+
+.blue p {
+  color: #00f;
+}
+
+.slider {
+  margin-left: 8px;
+  -webkit-appearance: none;
+  width: 100%;
+  height: 10px;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#red {
+  background-color: rgba(255, 0, 0, 0.7);
+}
+
+#red::-webkit-slider-thumb {
+  background-color: #f00;
+}
+
+#blue {
+  background-color: rgba(0, 0, 255, 0.7);
+}
+
+#blue::-webkit-slider-thumb {
+  background: #00f;
+}
+
+#green {
+  background-color: rgba(0, 255, 0, 0.7);
+}
+
+#green::-webkit-slider-thumb {
+  background-color: #0f0;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+input[id='redText'],
+input[id='greenText'],
+input[id='blueText'] {
+  width: 100px;
+  height: 40px;
+  margin-left: 16px;
+  text-align: center;
+}
