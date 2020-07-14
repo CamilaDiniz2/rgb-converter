@@ -32,10 +32,12 @@ for (let slider of sliders) {
     }
 
     let radiusRGB = (redRadius + greenRadius + blueRadius) / (2 * 7.65);
-    console.log(radiusRGB);
+
     let rgbResult = redNumber + greenNumber + blueNumber;
     result.style.backgroundColor = '#' + rgbResult;
+
     document.querySelector('.rgbHex').innerHTML = '#' + rgbResult;
+
     result.style.borderRadius = radiusRGB + '%';
   });
 }
