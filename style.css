@@ -1,11 +1,12 @@
 body {
   background-color: #004;
+  color: #fff;
 }
 
 .container {
   width: 95%;
 
-  background-color: #ccc;
+  background-color: #000;
   margin: 64px auto;
 
   border-radius: 16px;
@@ -14,6 +15,7 @@ body {
 h1 {
   padding: 32px;
   text-align: center;
+  color: #fff;
 }
 
 .rgb-inputs {
@@ -21,23 +23,37 @@ h1 {
   margin: 16px auto;
 
   border-radius: 16px;
+  background-color: #000;
 }
 
 .rgb-transform {
   margin-top: 32px;
-  color: #000;
+  color: #fff;
   text-align: center;
-  background-color: #ccc;
-  border-color: #ccc;
+  background-color: #000;
+  border-color: #000;
 }
+
 .rgb-result {
   width: 250px;
   height: 250px;
   margin: 16px auto;
 
   background-color: #000;
+  border: 1px solid #fff;
 
   margin-bottom: 32px;
+
+  display: flex;
+  justify-content: center;
+}
+
+.rgb-result p {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+
+  font-size: 24px;
 }
 
 .red,

@@ -35,6 +35,7 @@ for (let slider of sliders) {
     console.log(radiusRGB);
     let rgbResult = redNumber + greenNumber + blueNumber;
     result.style.backgroundColor = '#' + rgbResult;
+    document.querySelector('.rgbHex').innerHTML = '#' + rgbResult;
     result.style.borderRadius = radiusRGB + '%';
   });
 }
